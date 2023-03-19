@@ -1,0 +1,15 @@
+C:\Users\XMengH\source\repos\Handling_arrays\Handling_arrays\bin\Debug\net6.0\Handling_arrays.exe
+C:\Users\XMengH\source\repos\Handling_arrays\Handling_arrays\bin\Debug\net6.0\Handling_arrays.deps.json
+C:\Users\XMengH\source\repos\Handling_arrays\Handling_arrays\bin\Debug\net6.0\Handling_arrays.runtimeconfig.json
+C:\Users\XMengH\source\repos\Handling_arrays\Handling_arrays\bin\Debug\net6.0\Handling_arrays.dll
+C:\Users\XMengH\source\repos\Handling_arrays\Handling_arrays\bin\Debug\net6.0\Handling_arrays.pdb
+C:\Users\XMengH\source\repos\Handling_arrays\Handling_arrays\obj\Debug\net6.0\Handling_arrays.csproj.AssemblyReference.cache
+C:\Users\XMengH\source\repos\Handling_arrays\Handling_arrays\obj\Debug\net6.0\Handling_arrays.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\XMengH\source\repos\Handling_arrays\Handling_arrays\obj\Debug\net6.0\Handling_arrays.AssemblyInfoInputs.cache
+C:\Users\XMengH\source\repos\Handling_arrays\Handling_arrays\obj\Debug\net6.0\Handling_arrays.AssemblyInfo.cs
+C:\Users\XMengH\source\repos\Handling_arrays\Handling_arrays\obj\Debug\net6.0\Handling_arrays.csproj.CoreCompileInputs.cache
+C:\Users\XMengH\source\repos\Handling_arrays\Handling_arrays\obj\Debug\net6.0\Handling_arrays.dll
+C:\Users\XMengH\source\repos\Handling_arrays\Handling_arrays\obj\Debug\net6.0\refint\Handling_arrays.dll
+C:\Users\XMengH\source\repos\Handling_arrays\Handling_arrays\obj\Debug\net6.0\Handling_arrays.pdb
+C:\Users\XMengH\source\repos\Handling_arrays\Handling_arrays\obj\Debug\net6.0\Handling_arrays.genruntimeconfig.cache
+C:\Users\XMengH\source\repos\Handling_arrays\Handling_arrays\obj\Debug\net6.0\ref\Handling_arrays.dll

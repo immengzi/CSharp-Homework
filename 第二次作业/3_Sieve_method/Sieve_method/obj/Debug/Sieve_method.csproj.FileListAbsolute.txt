@@ -1,0 +1,8 @@
+C:\Users\XMengH\source\repos\Sieve_method\Sieve_method\bin\Debug\Sieve_method.exe.config
+C:\Users\XMengH\source\repos\Sieve_method\Sieve_method\bin\Debug\Sieve_method.exe
+C:\Users\XMengH\source\repos\Sieve_method\Sieve_method\bin\Debug\Sieve_method.pdb
+C:\Users\XMengH\source\repos\Sieve_method\Sieve_method\obj\Debug\Sieve_method.csproj.AssemblyReference.cache
+C:\Users\XMengH\source\repos\Sieve_method\Sieve_method\obj\Debug\Sieve_method.csproj.SuggestedBindingRedirects.cache
+C:\Users\XMengH\source\repos\Sieve_method\Sieve_method\obj\Debug\Sieve_method.csproj.CoreCompileInputs.cache
+C:\Users\XMengH\source\repos\Sieve_method\Sieve_method\obj\Debug\Sieve_method.exe
+C:\Users\XMengH\source\repos\Sieve_method\Sieve_method\obj\Debug\Sieve_method.pdb

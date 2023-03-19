@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sieve_method", "Sieve_method\Sieve_method.csproj", "{65B3EF65-D47B-4853-836A-DF102448010C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65B3EF65-D47B-4853-836A-DF102448010C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65B3EF65-D47B-4853-836A-DF102448010C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65B3EF65-D47B-4853-836A-DF102448010C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65B3EF65-D47B-4853-836A-DF102448010C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8D80CA3-6DAB-42F1-8B39-E29B1DB63822}
+	EndGlobalSection
+EndGlobal

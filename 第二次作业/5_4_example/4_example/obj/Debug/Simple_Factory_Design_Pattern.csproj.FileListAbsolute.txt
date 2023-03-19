@@ -1,0 +1,8 @@
+C:\Users\XMengH\source\repos\5_4_example\4_example\bin\Debug\4_example.exe.config
+C:\Users\XMengH\source\repos\5_4_example\4_example\bin\Debug\4_example.exe
+C:\Users\XMengH\source\repos\5_4_example\4_example\bin\Debug\4_example.pdb
+C:\Users\XMengH\source\repos\5_4_example\4_example\obj\Debug\Simple_Factory_Design_Pattern.csproj.AssemblyReference.cache
+C:\Users\XMengH\source\repos\5_4_example\4_example\obj\Debug\Simple_Factory_Design_Pattern.csproj.SuggestedBindingRedirects.cache
+C:\Users\XMengH\source\repos\5_4_example\4_example\obj\Debug\Simple_Factory_Design_Pattern.csproj.CoreCompileInputs.cache
+C:\Users\XMengH\source\repos\5_4_example\4_example\obj\Debug\4_example.exe
+C:\Users\XMengH\source\repos\5_4_example\4_example\obj\Debug\4_example.pdb

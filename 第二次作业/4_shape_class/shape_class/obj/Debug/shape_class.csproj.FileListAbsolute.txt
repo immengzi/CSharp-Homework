@@ -1,0 +1,8 @@
+C:\Users\XMengH\source\repos\shape_class\shape_class\obj\Debug\shape_class.csproj.AssemblyReference.cache
+C:\Users\XMengH\source\repos\shape_class\shape_class\obj\Debug\shape_class.csproj.SuggestedBindingRedirects.cache
+C:\Users\XMengH\source\repos\shape_class\shape_class\obj\Debug\shape_class.csproj.CoreCompileInputs.cache
+C:\Users\XMengH\source\repos\shape_class\shape_class\bin\Debug\shape_class.exe.config
+C:\Users\XMengH\source\repos\shape_class\shape_class\bin\Debug\shape_class.exe
+C:\Users\XMengH\source\repos\shape_class\shape_class\bin\Debug\shape_class.pdb
+C:\Users\XMengH\source\repos\shape_class\shape_class\obj\Debug\shape_class.exe
+C:\Users\XMengH\source\repos\shape_class\shape_class\obj\Debug\shape_class.pdb

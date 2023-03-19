@@ -1,0 +1,8 @@
+C:\Users\XMengH\source\repos\Find_prime_factors\Find_prime_factors\bin\Debug\Find_prime_factors.exe.config
+C:\Users\XMengH\source\repos\Find_prime_factors\Find_prime_factors\bin\Debug\Find_prime_factors.exe
+C:\Users\XMengH\source\repos\Find_prime_factors\Find_prime_factors\bin\Debug\Find_prime_factors.pdb
+C:\Users\XMengH\source\repos\Find_prime_factors\Find_prime_factors\obj\Debug\Find_prime_factors.csproj.AssemblyReference.cache
+C:\Users\XMengH\source\repos\Find_prime_factors\Find_prime_factors\obj\Debug\Find_prime_factors.csproj.SuggestedBindingRedirects.cache
+C:\Users\XMengH\source\repos\Find_prime_factors\Find_prime_factors\obj\Debug\Find_prime_factors.csproj.CoreCompileInputs.cache
+C:\Users\XMengH\source\repos\Find_prime_factors\Find_prime_factors\obj\Debug\Find_prime_factors.exe
+C:\Users\XMengH\source\repos\Find_prime_factors\Find_prime_factors\obj\Debug\Find_prime_factors.pdb
