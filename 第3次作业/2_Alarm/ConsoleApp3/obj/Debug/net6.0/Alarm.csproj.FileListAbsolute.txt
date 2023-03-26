@@ -1,0 +1,15 @@
+C:\Users\XMengH\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\net6.0\Alarm.exe
+C:\Users\XMengH\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\net6.0\Alarm.deps.json
+C:\Users\XMengH\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\net6.0\Alarm.runtimeconfig.json
+C:\Users\XMengH\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\net6.0\Alarm.dll
+C:\Users\XMengH\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\net6.0\Alarm.pdb
+C:\Users\XMengH\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\net6.0\Alarm.csproj.AssemblyReference.cache
+C:\Users\XMengH\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\net6.0\Alarm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\XMengH\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\net6.0\Alarm.AssemblyInfoInputs.cache
+C:\Users\XMengH\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\net6.0\Alarm.AssemblyInfo.cs
+C:\Users\XMengH\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\net6.0\Alarm.csproj.CoreCompileInputs.cache
+C:\Users\XMengH\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\net6.0\Alarm.dll
+C:\Users\XMengH\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\net6.0\refint\Alarm.dll
+C:\Users\XMengH\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\net6.0\Alarm.pdb
+C:\Users\XMengH\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\net6.0\Alarm.genruntimeconfig.cache
+C:\Users\XMengH\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\net6.0\ref\Alarm.dll
