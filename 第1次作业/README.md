@@ -1,3 +1,3 @@
-# CSharpWork-First
+# CSharpWork-1st
 
-这是 [immengzi](http://immengzi.wiki) 的**第一次** C# 作业。
+这是 [immengzi](https://github.com/immengzi) 的 **第一次** C# 作业。
