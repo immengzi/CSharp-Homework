@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\XMengH\\source\\repos\\LinkedList\\LinkedList\\LinkedList.csproj",
+      "projectUniqueName": "F:\\csharp-work\\第3次作业\\1_LinkedList\\LinkedList\\LinkedList.csproj",
       "projectName": "LinkedList",
-      "projectPath": "C:\\Users\\XMengH\\source\\repos\\LinkedList\\LinkedList\\LinkedList.csproj",
+      "projectPath": "F:\\csharp-work\\第3次作业\\1_LinkedList\\LinkedList\\LinkedList.csproj",
       "packagesPath": "C:\\Users\\XMengH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\XMengH\\source\\repos\\LinkedList\\LinkedList\\obj\\",
+      "outputPath": "F:\\csharp-work\\第3次作业\\1_LinkedList\\LinkedList\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\XMengH\\AppData\\Roaming\\NuGet\\NuGet.Config",
