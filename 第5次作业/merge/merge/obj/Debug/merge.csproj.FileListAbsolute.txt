@@ -1,0 +1,11 @@
+C:\Users\XMengH\source\repos\merge\merge\bin\Debug\merge.exe.config
+C:\Users\XMengH\source\repos\merge\merge\bin\Debug\merge.exe
+C:\Users\XMengH\source\repos\merge\merge\bin\Debug\merge.pdb
+C:\Users\XMengH\source\repos\merge\merge\obj\Debug\merge.csproj.AssemblyReference.cache
+C:\Users\XMengH\source\repos\merge\merge\obj\Debug\merge.csproj.SuggestedBindingRedirects.cache
+C:\Users\XMengH\source\repos\merge\merge\obj\Debug\merge.Form1.resources
+C:\Users\XMengH\source\repos\merge\merge\obj\Debug\merge.Properties.Resources.resources
+C:\Users\XMengH\source\repos\merge\merge\obj\Debug\merge.csproj.GenerateResource.cache
+C:\Users\XMengH\source\repos\merge\merge\obj\Debug\merge.csproj.CoreCompileInputs.cache
+C:\Users\XMengH\source\repos\merge\merge\obj\Debug\merge.exe
+C:\Users\XMengH\source\repos\merge\merge\obj\Debug\merge.pdb
