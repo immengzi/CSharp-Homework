@@ -1,0 +1,17 @@
+C:\Users\13017\source\repos\reptile\reptile\bin\Debug\net6.0\reptile.exe
+C:\Users\13017\source\repos\reptile\reptile\bin\Debug\net6.0\reptile.deps.json
+C:\Users\13017\source\repos\reptile\reptile\bin\Debug\net6.0\reptile.runtimeconfig.json
+C:\Users\13017\source\repos\reptile\reptile\bin\Debug\net6.0\reptile.dll
+C:\Users\13017\source\repos\reptile\reptile\bin\Debug\net6.0\reptile.pdb
+C:\Users\13017\source\repos\reptile\reptile\obj\Debug\net6.0\reptile.csproj.AssemblyReference.cache
+C:\Users\13017\source\repos\reptile\reptile\obj\Debug\net6.0\reptile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\13017\source\repos\reptile\reptile\obj\Debug\net6.0\reptile.AssemblyInfoInputs.cache
+C:\Users\13017\source\repos\reptile\reptile\obj\Debug\net6.0\reptile.AssemblyInfo.cs
+C:\Users\13017\source\repos\reptile\reptile\obj\Debug\net6.0\reptile.csproj.CoreCompileInputs.cache
+C:\Users\13017\source\repos\reptile\reptile\obj\Debug\net6.0\reptile.dll
+C:\Users\13017\source\repos\reptile\reptile\obj\Debug\net6.0\refint\reptile.dll
+C:\Users\13017\source\repos\reptile\reptile\obj\Debug\net6.0\reptile.pdb
+C:\Users\13017\source\repos\reptile\reptile\obj\Debug\net6.0\reptile.genruntimeconfig.cache
+C:\Users\13017\source\repos\reptile\reptile\obj\Debug\net6.0\ref\reptile.dll
+C:\Users\13017\source\repos\reptile\reptile\bin\Debug\net6.0\HtmlAgilityPack.dll
+C:\Users\13017\source\repos\reptile\reptile\obj\Debug\net6.0\reptile.csproj.CopyComplete
