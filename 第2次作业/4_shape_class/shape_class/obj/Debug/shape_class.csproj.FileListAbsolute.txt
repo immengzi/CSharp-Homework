@@ -6,3 +6,11 @@ C:\Users\XMengH\source\repos\shape_class\shape_class\bin\Debug\shape_class.exe
 C:\Users\XMengH\source\repos\shape_class\shape_class\bin\Debug\shape_class.pdb
 C:\Users\XMengH\source\repos\shape_class\shape_class\obj\Debug\shape_class.exe
 C:\Users\XMengH\source\repos\shape_class\shape_class\obj\Debug\shape_class.pdb
+E:\gitkarten\csharp-work\第2次作业\4_shape_class\shape_class\bin\Debug\shape_class.exe.config
+E:\gitkarten\csharp-work\第2次作业\4_shape_class\shape_class\bin\Debug\shape_class.exe
+E:\gitkarten\csharp-work\第2次作业\4_shape_class\shape_class\bin\Debug\shape_class.pdb
+E:\gitkarten\csharp-work\第2次作业\4_shape_class\shape_class\obj\Debug\shape_class.csproj.AssemblyReference.cache
+E:\gitkarten\csharp-work\第2次作业\4_shape_class\shape_class\obj\Debug\shape_class.csproj.SuggestedBindingRedirects.cache
+E:\gitkarten\csharp-work\第2次作业\4_shape_class\shape_class\obj\Debug\shape_class.csproj.CoreCompileInputs.cache
+E:\gitkarten\csharp-work\第2次作业\4_shape_class\shape_class\obj\Debug\shape_class.exe
+E:\gitkarten\csharp-work\第2次作业\4_shape_class\shape_class\obj\Debug\shape_class.pdb

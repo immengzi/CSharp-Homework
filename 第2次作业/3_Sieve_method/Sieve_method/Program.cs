@@ -20,7 +20,7 @@ namespace PrimeSieve
                 }
             }
 
-            Console.WriteLine("Primes between 2 and " + N + ":");
+            Console.WriteLine("2~100之间的素数为:");
             for (int i = 2; i <= N; i++)
                 if (isPrime[i]) Console.Write(i + " ");
         }

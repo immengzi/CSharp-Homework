@@ -8,19 +8,24 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\XMengH\\.nuget\\packages\\": {}
+    "C:\\Users\\XMengH\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\csharp-work\\第3次作业\\1_LinkedList\\LinkedList\\LinkedList.csproj",
+      "projectUniqueName": "E:\\gitkarten\\csharp-work\\第3次作业\\1_LinkedList\\LinkedList\\LinkedList.csproj",
       "projectName": "LinkedList",
-      "projectPath": "F:\\csharp-work\\第3次作业\\1_LinkedList\\LinkedList\\LinkedList.csproj",
+      "projectPath": "E:\\gitkarten\\csharp-work\\第3次作业\\1_LinkedList\\LinkedList\\LinkedList.csproj",
       "packagesPath": "C:\\Users\\XMengH\\.nuget\\packages\\",
-      "outputPath": "F:\\csharp-work\\第3次作业\\1_LinkedList\\LinkedList\\obj\\",
+      "outputPath": "E:\\gitkarten\\csharp-work\\第3次作业\\1_LinkedList\\LinkedList\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\XMengH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -6,3 +6,11 @@ C:\Users\XMengH\source\repos\Sieve_method\Sieve_method\obj\Debug\Sieve_method.cs
 C:\Users\XMengH\source\repos\Sieve_method\Sieve_method\obj\Debug\Sieve_method.csproj.CoreCompileInputs.cache
 C:\Users\XMengH\source\repos\Sieve_method\Sieve_method\obj\Debug\Sieve_method.exe
 C:\Users\XMengH\source\repos\Sieve_method\Sieve_method\obj\Debug\Sieve_method.pdb
+E:\gitkarten\csharp-work\第2次作业\3_Sieve_method\Sieve_method\bin\Debug\Sieve_method.exe.config
+E:\gitkarten\csharp-work\第2次作业\3_Sieve_method\Sieve_method\bin\Debug\Sieve_method.exe
+E:\gitkarten\csharp-work\第2次作业\3_Sieve_method\Sieve_method\bin\Debug\Sieve_method.pdb
+E:\gitkarten\csharp-work\第2次作业\3_Sieve_method\Sieve_method\obj\Debug\Sieve_method.csproj.AssemblyReference.cache
+E:\gitkarten\csharp-work\第2次作业\3_Sieve_method\Sieve_method\obj\Debug\Sieve_method.csproj.SuggestedBindingRedirects.cache
+E:\gitkarten\csharp-work\第2次作业\3_Sieve_method\Sieve_method\obj\Debug\Sieve_method.csproj.CoreCompileInputs.cache
+E:\gitkarten\csharp-work\第2次作业\3_Sieve_method\Sieve_method\obj\Debug\Sieve_method.exe
+E:\gitkarten\csharp-work\第2次作业\3_Sieve_method\Sieve_method\obj\Debug\Sieve_method.pdb

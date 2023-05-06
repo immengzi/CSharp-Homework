@@ -6,3 +6,11 @@ C:\Users\XMengH\source\repos\Find_prime_factors\Find_prime_factors\obj\Debug\Fin
 C:\Users\XMengH\source\repos\Find_prime_factors\Find_prime_factors\obj\Debug\Find_prime_factors.csproj.CoreCompileInputs.cache
 C:\Users\XMengH\source\repos\Find_prime_factors\Find_prime_factors\obj\Debug\Find_prime_factors.exe
 C:\Users\XMengH\source\repos\Find_prime_factors\Find_prime_factors\obj\Debug\Find_prime_factors.pdb
+E:\gitkarten\csharp-work\第2次作业\1_Find_prime_factors\Find_prime_factors\bin\Debug\Find_prime_factors.exe.config
+E:\gitkarten\csharp-work\第2次作业\1_Find_prime_factors\Find_prime_factors\bin\Debug\Find_prime_factors.exe
+E:\gitkarten\csharp-work\第2次作业\1_Find_prime_factors\Find_prime_factors\bin\Debug\Find_prime_factors.pdb
+E:\gitkarten\csharp-work\第2次作业\1_Find_prime_factors\Find_prime_factors\obj\Debug\Find_prime_factors.csproj.AssemblyReference.cache
+E:\gitkarten\csharp-work\第2次作业\1_Find_prime_factors\Find_prime_factors\obj\Debug\Find_prime_factors.csproj.SuggestedBindingRedirects.cache
+E:\gitkarten\csharp-work\第2次作业\1_Find_prime_factors\Find_prime_factors\obj\Debug\Find_prime_factors.csproj.CoreCompileInputs.cache
+E:\gitkarten\csharp-work\第2次作业\1_Find_prime_factors\Find_prime_factors\obj\Debug\Find_prime_factors.exe
+E:\gitkarten\csharp-work\第2次作业\1_Find_prime_factors\Find_prime_factors\obj\Debug\Find_prime_factors.pdb

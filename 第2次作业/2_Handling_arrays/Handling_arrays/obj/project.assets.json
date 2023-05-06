@@ -8,19 +8,24 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\XMengH\\.nuget\\packages\\": {}
+    "C:\\Users\\XMengH\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\XMengH\\source\\repos\\Handling_arrays\\Handling_arrays\\Handling_arrays.csproj",
+      "projectUniqueName": "E:\\gitkarten\\csharp-work\\第2次作业\\2_Handling_arrays\\Handling_arrays\\Handling_arrays.csproj",
       "projectName": "Handling_arrays",
-      "projectPath": "C:\\Users\\XMengH\\source\\repos\\Handling_arrays\\Handling_arrays\\Handling_arrays.csproj",
+      "projectPath": "E:\\gitkarten\\csharp-work\\第2次作业\\2_Handling_arrays\\Handling_arrays\\Handling_arrays.csproj",
       "packagesPath": "C:\\Users\\XMengH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\XMengH\\source\\repos\\Handling_arrays\\Handling_arrays\\obj\\",
+      "outputPath": "E:\\gitkarten\\csharp-work\\第2次作业\\2_Handling_arrays\\Handling_arrays\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\XMengH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
