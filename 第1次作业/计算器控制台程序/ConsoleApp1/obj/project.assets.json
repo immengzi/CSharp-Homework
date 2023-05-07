@@ -8,19 +8,24 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\XMengH\\.nuget\\packages\\": {}
+    "C:\\Users\\XMengH\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\XMengH\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "E:\\gitkarten\\csharp-work\\第1次作业\\计算器控制台程序\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\XMengH\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectPath": "E:\\gitkarten\\csharp-work\\第1次作业\\计算器控制台程序\\ConsoleApp1\\ConsoleApp1.csproj",
       "packagesPath": "C:\\Users\\XMengH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\XMengH\\source\\repos\\ConsoleApp1\\ConsoleApp1\\obj\\",
+      "outputPath": "E:\\gitkarten\\csharp-work\\第1次作业\\计算器控制台程序\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\XMengH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

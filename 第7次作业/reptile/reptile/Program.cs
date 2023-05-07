@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Text.RegularExpressions;
 using System.Threading;
-
+using HtmlWeb;
 using HtmlAgilityPack;
 
 namespace Crawler
