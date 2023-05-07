@@ -10,13 +10,13 @@ namespace GenericListDemo
 
             // 从控制台输入元素并添加到链表中
             Console.WriteLine("请输入整数元素，每两个元素之间有一个空格，直到换行/回车为止：");
-            string input = Console.ReadLine();
-            string[] inputArr = input.Split(' ');
+            string? input = Console.ReadLine();
+            string[] inputArr = input?.Split(' ') ?? Array.Empty<string>();
             foreach (string str in inputArr)
             {
                 if (str != "")
                 {
-                    int num = int.Parse(str);
+                    int num = str != null ? int.Parse(str) : 0;
                     list.Add(num);
                 }
             }
@@ -27,7 +27,7 @@ namespace GenericListDemo
             Console.WriteLine();
 
             // 使用ForEach方法求最大值
-            int max = 0;
+            int max = int.MinValue;
             list.ForEach(x => { if (x > max) max = x; });
             Console.WriteLine("最大值：" + max);
 
@@ -45,15 +45,15 @@ namespace GenericListDemo
 
     class GenericList<T>
     {
-        private Node<T> head;
-        private Node<T> tail;
+        private Node<T>? head;
+        private Node<T>? tail;
 
         public GenericList()
         {
             tail = head = null;
         }
 
-        public Node<T> Head
+        public Node<T>? Head
         {
             get => head;
         }

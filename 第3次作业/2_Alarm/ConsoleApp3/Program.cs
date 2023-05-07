@@ -41,8 +41,28 @@ namespace ClockApp
     {
         static void Main(string[] args)
         {
-            Console.Write("请输入闹钟时间:时(0-23):分(0-59):秒(0-59）：");
-            DateTime alarmTime = DateTime.Parse(Console.ReadLine());
+            DateTime alarmTime;
+
+            while (true)
+            {
+                Console.Write("请输入闹钟时间（格式为 yyyy-MM-dd HH:mm:ss）：");
+                string input = Console.ReadLine();
+
+                if (string.IsNullOrEmpty(input))
+                {
+                    Console.WriteLine("输入不能为空，请重新输入。");
+                }
+                else if (DateTime.TryParse(input, out alarmTime))
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("输入格式不正确，请重新输入。");
+                }
+            }
+
+            Console.WriteLine("闹钟时间为：" + alarmTime.ToString("yyyy-MM-dd HH:mm:ss"));
 
             var clock = new Clock(); //创建一个Clock实例
 
