@@ -1,0 +1,8 @@
+C:\Users\XMengH\source\repos\reptile\reptile\bin\Debug\reptile.exe.config
+C:\Users\XMengH\source\repos\reptile\reptile\bin\Debug\reptile.exe
+C:\Users\XMengH\source\repos\reptile\reptile\bin\Debug\reptile.pdb
+C:\Users\XMengH\source\repos\reptile\reptile\obj\Debug\reptile.csproj.AssemblyReference.cache
+C:\Users\XMengH\source\repos\reptile\reptile\obj\Debug\reptile.csproj.SuggestedBindingRedirects.cache
+C:\Users\XMengH\source\repos\reptile\reptile\obj\Debug\reptile.csproj.CoreCompileInputs.cache
+C:\Users\XMengH\source\repos\reptile\reptile\obj\Debug\reptile.exe
+C:\Users\XMengH\source\repos\reptile\reptile\obj\Debug\reptile.pdb

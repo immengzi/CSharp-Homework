@@ -1,92 +1,103 @@
 ﻿using System;
+using System.Text;
 using System.Collections.Generic;
-using System.Net;
+using System.Net.Http;
 using System.Text.RegularExpressions;
-using System.Threading;
-using HtmlWeb;
-using HtmlAgilityPack;
-
-namespace Crawler
+using System.Threading.Tasks;
+using System.Web;
+namespace UniversityPhoneNumberCrawler
 {
     class Program
     {
-        static List<string> urls = new List<string>();
-        static List<string> phoneNumbers = new List<string>();
-        static object lockObj = new object();
-
-        static void Main(string[] args)
+        static readonly HttpClient httpClient = new HttpClient();
+        static readonly List<string> phoneNumberResults = new List<string>();
+        static readonly object lockObj = new object();
+        static async Task Main(string[] args)
         {
-            Console.Write("请输入关键字:");
+            Console.InputEncoding = Encoding.GetEncoding("gb2312");
+            Console.Write("请输入关键字：");
             string keyword = Console.ReadLine();
-            string[] searchUrls = new string[20];
-            for (int i = 0; i < 20; i++)
+            Console.WriteLine($"搜索关键字：{keyword}");
+            var searchResults = await Search(keyword);
+            Console.WriteLine($"搜索结果：共 {searchResults.Count} 个");
+            foreach (var result in searchResults)
             {
-                searchUrls[i] = $"https://cn.bing.com/search?q={keyword}&first={i * 10}";
+                Console.WriteLine($"  {result}");
             }
-
-            // 创建20个线程爬取数据
-            Thread[] threads = new Thread[20];
-            for (int i = 0; i < 20; i++)
+            Console.WriteLine("开始爬取电话号码...");
+            var tasks = new List<Task>();
+            foreach (var url in searchResults)
             {
-                threads[i] = new Thread(GetInfo);
-                threads[i].Start(searchUrls[i]);
+                tasks.Add(Task.Run(() => CrawlUrl(url)));
             }
-
-            // 等待所有线程结束
-            foreach (Thread thread in threads)
+            await Task.WhenAll(tasks);
+            Console.WriteLine($"共爬取到 {phoneNumberResults.Count} 个电话号码：");
+            foreach (var result in phoneNumberResults)
             {
-                if (thread != null)
-                    thread.Join();
+                Console.WriteLine($"  {result}");
             }
-
-            // 显示结果
-            Console.WriteLine($"总共爬取{phoneNumbers.Count}个高校电话号码:");
-            for (int i = 0; i < phoneNumbers.Count; i++)
-            {
-                Console.WriteLine($"{phoneNumbers[i]}  url:{urls[i]}");
-            }
-
-            Console.ReadKey();
         }
-
-        static void GetInfo(object searchUrl)
+        static async Task<List<string>> Search(string keyword)
         {
-            string url = (string)searchUrl;
-            HtmlWeb web = new HtmlWeb();
+            var searchUrls = new List<string>
+            {
+                // $"https://www.baidu.com/s?wd={keyword}",
+                $"https://www.bing.com/search?q={HttpUtility.UrlEncode(keyword)}",
+            };
+            var results = new List<string>();
+            foreach (var url in searchUrls)
+            {
+                Console.WriteLine($"正在访问 {url}...");
+                try
+                {
+                    var html = await httpClient.GetStringAsync(url);
+                    // 仅用于测试
+                    // Console.WriteLine(html);
+                    Console.WriteLine($"访问 {url} 成功，共 {html.Length} 字节");
+                    var regex = new Regex(@"<a href=""(?<url>https?://[\w\d./?=#&]+)""");
+                    var matches = regex.Matches(html);
+                    foreach (Match match in matches)
+                    {
+                        var result = match.Groups["url"].Value;
+                        results.Add(result);
+                    }
+                    Console.WriteLine($"从 {url} 中找到 {matches.Count} 个 URL");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"访问 {url} 失败：{ex.Message}");
+                }
+            }
+            return results;
+        }
+        static void CrawlUrl(string url)
+        {
             try
             {
-                HtmlDocument doc = web.Load(url);
-
-                // 使用正则表达式寻找电话号码
-                Regex regex = new Regex(@"\d{3,4}-\d{7,8}");
-                MatchCollection matches = regex.Matches(doc.Text);
-
-                // 获取页面链接     
-                HtmlNodeCollection nodes = doc.DocumentNode.SelectNodes("//a[starts-with(@href, 'http')]");
-
-                for (int i = 0; i < matches.Count; i++)
+                int phoneNumberCount = 0;
+                Console.WriteLine($"正在访问 {url}...");
+                var html = httpClient.GetStringAsync(url).Result;
+                Console.WriteLine($"访问 {url} 成功，共 {html.Length} 字节");
+                var regex = new Regex(@"\b(?:\d{2,3}-)?\d{8}\b");
+                var matches = regex.Matches(html);
+                Console.WriteLine($"从 {url} 中找到 {matches.Count} 个电话号码");
+                foreach (Match match in matches)
                 {
-                    if (phoneNumbers.Count < 100)
+                    if (phoneNumberCount >= 100) break;
+                    var phoneNumber = match.Value;
+                    lock (lockObj)
                     {
-                        string phoneNum = matches[i].Value.Trim();
-                        if (!phoneNumbers.Contains(phoneNum))
+                        if (!phoneNumberResults.Contains(phoneNumber))
                         {
-                            lock (lockObj)
-                            {
-                                if (phoneNumbers.Count < 100 && !phoneNumbers.Contains(phoneNum))
-                                {
-                                    phoneNumbers.Add(phoneNum);
-                                    if (i < nodes.Count)
-                                        urls.Add(nodes[i].Attributes["href"].Value);
-                                }
-                            }
+                            phoneNumberResults.Add($"{phoneNumber}\t{url}");
                         }
                     }
+                    phoneNumberCount++;
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"爬取{url}时出错:{ex.Message}");
+                Console.WriteLine($"访问 URL {url} 失败：{ex.Message}");
             }
         }
     }
