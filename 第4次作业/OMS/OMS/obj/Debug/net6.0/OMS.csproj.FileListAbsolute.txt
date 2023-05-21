@@ -1,0 +1,15 @@
+C:\Users\XMengH\source\repos\OMS\OMS\obj\Debug\net6.0\OMS.csproj.AssemblyReference.cache
+C:\Users\XMengH\source\repos\OMS\OMS\obj\Debug\net6.0\OMS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\XMengH\source\repos\OMS\OMS\obj\Debug\net6.0\OMS.AssemblyInfoInputs.cache
+C:\Users\XMengH\source\repos\OMS\OMS\obj\Debug\net6.0\OMS.AssemblyInfo.cs
+C:\Users\XMengH\source\repos\OMS\OMS\obj\Debug\net6.0\OMS.csproj.CoreCompileInputs.cache
+C:\Users\XMengH\source\repos\OMS\OMS\bin\Debug\net6.0\OMS.exe
+C:\Users\XMengH\source\repos\OMS\OMS\bin\Debug\net6.0\OMS.deps.json
+C:\Users\XMengH\source\repos\OMS\OMS\bin\Debug\net6.0\OMS.runtimeconfig.json
+C:\Users\XMengH\source\repos\OMS\OMS\bin\Debug\net6.0\OMS.dll
+C:\Users\XMengH\source\repos\OMS\OMS\bin\Debug\net6.0\OMS.pdb
+C:\Users\XMengH\source\repos\OMS\OMS\obj\Debug\net6.0\OMS.dll
+C:\Users\XMengH\source\repos\OMS\OMS\obj\Debug\net6.0\refint\OMS.dll
+C:\Users\XMengH\source\repos\OMS\OMS\obj\Debug\net6.0\OMS.pdb
+C:\Users\XMengH\source\repos\OMS\OMS\obj\Debug\net6.0\OMS.genruntimeconfig.cache
+C:\Users\XMengH\source\repos\OMS\OMS\obj\Debug\net6.0\ref\OMS.dll
