@@ -1,4 +1,6 @@
-﻿namespace OMS
+﻿using System.Xml.Serialization;
+
+namespace OMS
 {
     internal class OrderService
     {
@@ -193,6 +195,43 @@
             foreach (var order in sortOrders)
             {
                 Console.WriteLine(order.ToString());
+                Console.WriteLine();
+            }
+        }
+
+        public void Export()
+        {
+            try
+            {
+                using (FileStream fileStream = new FileStream("order.xml", FileMode.Create))
+                {
+                    XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Order>));
+                    xmlSerializer.Serialize(fileStream,orders);
+                }
+                Console.WriteLine("已经将订单导出为XML文件。\n");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"导出订单为XML文件时出现错误：{ex.Message}\n");
+                throw;
+            }
+        }
+
+        public void Import()
+        {
+            try
+            {
+                using (FileStream fileStream = new FileStream("order.xml", FileMode.Open))
+                {
+                    XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Order>));
+                    orders = (List<Order>)xmlSerializer.Deserialize(fileStream);
+                }
+                Console.WriteLine("已经从XML文件导入订单。\n");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"从XML文件导入订单时出现错误：{ex.Message}\n");
+                throw;
             }
         }
     }

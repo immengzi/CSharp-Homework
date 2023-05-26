@@ -13,7 +13,9 @@ class OrderManagementSystem
                               "2.删除订单\n" +
                               "3.修改订单\n" +
                               "4.查询订单\n" +
-                              "5.查看全部订单"
+                              "5.查看全部订单\n" +
+                              "6.序列化\n" +
+                              "7.反序列化"
             );
             Console.Write("请输入操作序号：");
             string input = Console.ReadLine();
@@ -37,6 +39,8 @@ class OrderManagementSystem
                 case 3: orderService.ModifyOrder(); break;
                 case 4: orderService.QueryOrder(); break;
                 case 5: orderService.ShowAllOrders(); break;
+                case 6: orderService.Export();break;
+                case 7: orderService.Import();break;
                 default: Console.WriteLine("【提示】输入有误，请重新输入。\n"); break;
             }
         }

@@ -1,5 +1,6 @@
 ﻿namespace OMS
 {
+    [Serializable]
     public class Order
     {
         // 订单号
