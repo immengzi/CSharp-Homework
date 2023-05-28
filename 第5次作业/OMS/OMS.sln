@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMS", "OMS\OMS.csproj", "{3B1A0803-5767-4F40-91DF-BD37D0A2EB79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OMS", "OMS\OMS.csproj", "{3B1A0803-5767-4F40-91DF-BD37D0A2EB79}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决方案项", "{FDD27F2D-3FD8-4623-BC19-E2482F0B70DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderTest", "OrderTest\OrderTest.csproj", "{298865CE-1BE9-4BD1-851F-24203C5D8A2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +19,10 @@ Global
 		{3B1A0803-5767-4F40-91DF-BD37D0A2EB79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B1A0803-5767-4F40-91DF-BD37D0A2EB79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B1A0803-5767-4F40-91DF-BD37D0A2EB79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{298865CE-1BE9-4BD1-851F-24203C5D8A2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{298865CE-1BE9-4BD1-851F-24203C5D8A2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{298865CE-1BE9-4BD1-851F-24203C5D8A2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{298865CE-1BE9-4BD1-851F-24203C5D8A2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

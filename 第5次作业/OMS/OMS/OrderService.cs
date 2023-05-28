@@ -2,7 +2,7 @@
 
 namespace OMS
 {
-    internal class OrderService
+    public class OrderService
     {
         private List<Order> orders;
         public OrderService()
