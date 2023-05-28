@@ -4,7 +4,7 @@ namespace OMS
 {
     public class OrderService
     {
-        private List<Order> orders;
+        public List<Order> orders;
         public OrderService()
         {
             orders = new List<Order>();
@@ -40,9 +40,17 @@ namespace OMS
                 Console.WriteLine("请输入商品名:");
                 string productName = Console.ReadLine();
                 Console.WriteLine("请输入商品数量:");
-                int quantity = int.Parse(Console.ReadLine());
+                int quantity;
+                while (!int.TryParse(Console.ReadLine(), out quantity))
+                {
+                    Console.WriteLine("输入的商品数量无效，请重新输入:");
+                }
                 Console.WriteLine("请输入商品单价:");
-                decimal unitPrice = decimal.Parse(Console.ReadLine());
+                decimal unitPrice;
+                while (!decimal.TryParse(Console.ReadLine(), out unitPrice))
+                {
+                    Console.WriteLine("输入的商品单价无效，请重新输入:");
+                }
                 OrderDetails orderDetail = new OrderDetails()
                 {
                     ProductName = productName,
