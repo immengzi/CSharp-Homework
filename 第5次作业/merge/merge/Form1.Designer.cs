@@ -33,6 +33,8 @@
             this.btnBrowse1 = new System.Windows.Forms.Button();
             this.btnBrowse2 = new System.Windows.Forms.Button();
             this.btnMerge = new System.Windows.Forms.Button();
+            this.btnSelectFolder = new System.Windows.Forms.Button();
+            this.txtSaveFolder = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtFile1
@@ -71,7 +73,7 @@
             // 
             // btnMerge
             // 
-            this.btnMerge.Location = new System.Drawing.Point(341, 274);
+            this.btnMerge.Location = new System.Drawing.Point(348, 316);
             this.btnMerge.Name = "btnMerge";
             this.btnMerge.Size = new System.Drawing.Size(85, 42);
             this.btnMerge.TabIndex = 4;
@@ -79,11 +81,30 @@
             this.btnMerge.UseVisualStyleBackColor = true;
             this.btnMerge.Click += new System.EventHandler(this.btnMerge_Click);
             // 
+            // btnSelectFolder
+            // 
+            this.btnSelectFolder.Location = new System.Drawing.Point(471, 246);
+            this.btnSelectFolder.Name = "btnSelectFolder";
+            this.btnSelectFolder.Size = new System.Drawing.Size(75, 23);
+            this.btnSelectFolder.TabIndex = 5;
+            this.btnSelectFolder.Text = "合并目录";
+            this.btnSelectFolder.UseVisualStyleBackColor = true;
+            this.btnSelectFolder.Click += new System.EventHandler(this.btnSelectFolder_Click);
+            // 
+            // txtSaveFolder
+            // 
+            this.txtSaveFolder.Location = new System.Drawing.Point(184, 246);
+            this.txtSaveFolder.Name = "txtSaveFolder";
+            this.txtSaveFolder.Size = new System.Drawing.Size(281, 21);
+            this.txtSaveFolder.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtSaveFolder);
+            this.Controls.Add(this.btnSelectFolder);
             this.Controls.Add(this.btnMerge);
             this.Controls.Add(this.btnBrowse2);
             this.Controls.Add(this.btnBrowse1);
@@ -103,6 +124,8 @@
         private System.Windows.Forms.Button btnBrowse1;
         private System.Windows.Forms.Button btnBrowse2;
         private System.Windows.Forms.Button btnMerge;
+        private System.Windows.Forms.Button btnSelectFolder;
+        private System.Windows.Forms.TextBox txtSaveFolder;
     }
 }
 

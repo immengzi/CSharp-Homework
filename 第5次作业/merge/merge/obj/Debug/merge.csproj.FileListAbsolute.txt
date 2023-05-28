@@ -9,3 +9,14 @@ C:\Users\XMengH\source\repos\merge\merge\obj\Debug\merge.csproj.GenerateResource
 C:\Users\XMengH\source\repos\merge\merge\obj\Debug\merge.csproj.CoreCompileInputs.cache
 C:\Users\XMengH\source\repos\merge\merge\obj\Debug\merge.exe
 C:\Users\XMengH\source\repos\merge\merge\obj\Debug\merge.pdb
+E:\gitkarten\csharp-work\第5次作业\merge\merge\bin\Debug\merge.exe.config
+E:\gitkarten\csharp-work\第5次作业\merge\merge\bin\Debug\merge.exe
+E:\gitkarten\csharp-work\第5次作业\merge\merge\bin\Debug\merge.pdb
+E:\gitkarten\csharp-work\第5次作业\merge\merge\obj\Debug\merge.csproj.AssemblyReference.cache
+E:\gitkarten\csharp-work\第5次作业\merge\merge\obj\Debug\merge.csproj.SuggestedBindingRedirects.cache
+E:\gitkarten\csharp-work\第5次作业\merge\merge\obj\Debug\merge.Form1.resources
+E:\gitkarten\csharp-work\第5次作业\merge\merge\obj\Debug\merge.Properties.Resources.resources
+E:\gitkarten\csharp-work\第5次作业\merge\merge\obj\Debug\merge.csproj.GenerateResource.cache
+E:\gitkarten\csharp-work\第5次作业\merge\merge\obj\Debug\merge.csproj.CoreCompileInputs.cache
+E:\gitkarten\csharp-work\第5次作业\merge\merge\obj\Debug\merge.exe
+E:\gitkarten\csharp-work\第5次作业\merge\merge\obj\Debug\merge.pdb
