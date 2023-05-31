@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7E999D61-9EFE-48DA-B274-3F6691D1906D}</ProjectGuid>
+    <ProjectGuid>{9B1D1339-4DB3-40E5-A662-61A026CFB563}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>FileBrowser</RootNamespace>
     <AssemblyName>FileBrowser</AssemblyName>

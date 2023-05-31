@@ -4,105 +4,202 @@ using System.Windows.Forms;
 
 namespace FileBrowser
 {
-    public partial class Form1 : Form
+    public partial class FileBrowser : Form
     {
-        public Form1()
+        private string rootDirectory;
+        private TreeNode currentDirectoryNode;
+        public FileBrowser()
         {
             InitializeComponent();
-
-            // 在左侧树形视图中显示用户目录
-            string userFolder = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
-            TreeNode userNode = new TreeNode(userFolder);
-            userNode.Tag = userFolder;
-            treeView1.Nodes.Add(userNode);
-
-            // 加载用户目录下的文件和文件夹
-            LoadFolder(userNode);
+            // 因为 C 盘容易出现权限问题，所以以 D 盘为根目录...
+            rootDirectory = "D:"; // 根目录路径
+            PopulateTreeView(rootDirectory, null);
         }
 
-        private void LoadFolder(TreeNode folderNode)
+        private void Form1_Load(object sender, EventArgs e)
         {
+            // 设置窗口布局
+            splitContainer1.Dock = DockStyle.Fill;
+            // 设置树形视图
+            treeView1.Dock = DockStyle.Fill;
+            treeView1.AfterSelect += treeView1_AfterSelect;
+            // 设置列表视图
+            listView1.Dock = DockStyle.Fill;
+            listView1.View = View.Details;
+            listView1.Columns.Add("名称");
+            listView1.Columns.Add("类型");
+            listView1.DoubleClick += listView1_DoubleClick;
+
+
+            splitContainer1.Panel1.Controls.Add(treeView1);
+            splitContainer1.Panel2.Controls.Add(listView1);
+            Controls.Add(splitContainer1);
+
+        }
+
+        private void PopulateTreeView(string directory, TreeNode parentNode)
+        {
+            DirectoryInfo directoryInfo = new DirectoryInfo(directory);
+            TreeNode directoryNode = new TreeNode(directoryInfo.Name);
+
+            if (parentNode == null)
+            {
+                treeView1.Nodes.Add(directoryNode);
+            }
+            else
+            {
+                parentNode.Nodes.Add(directoryNode);
+            }
+
+            if (currentDirectoryNode == null)
+            {
+                currentDirectoryNode = directoryNode;
+            }
+
             try
             {
-                string folderPath = folderNode.Tag.ToString();
-
-                // 加载文件夹中的子文件夹
-                foreach (string subDir in Directory.GetDirectories(folderPath))
+                foreach (var dir in directoryInfo.GetDirectories())
                 {
-                    TreeNode subNode = new TreeNode(Path.GetFileName(subDir));
-                    subNode.Tag = subDir;
-                    folderNode.Nodes.Add(subNode);
-
-                    // 加载子文件夹中的文件和子文件夹
-                    LoadFolder(subNode);
-                }
-
-                // 加载文件夹中的文件
-                foreach (string file in Directory.GetFiles(folderPath))
-                {
-                    string ext = Path.GetExtension(file);
-                    if (ext == ".txt")
-                    {
-                        TreeNode fileNode = new TreeNode(Path.GetFileName(file));
-                        fileNode.Tag = file;
-                        folderNode.Nodes.Add(fileNode);
-                    }
+                    PopulateTreeView(dir.FullName, directoryNode);
                 }
             }
-            catch (Exception ex)
+            catch (UnauthorizedAccessException)
             {
-                // 如果加载文件或文件夹失败，则在控制台中输出错误信息
-                Console.WriteLine("Error loading folder: " + ex.Message);
+                // 忽略无法访问的文件夹
             }
+        }
+
+        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            // 当用户在左侧树形视图中选择一个节点时，更新右侧列表中的文件和文件夹
-            listView1.Items.Clear();
-            string selectedFolder = e.Node.Tag.ToString();
-            try
-            {
-                // 显示文件夹中的子文件夹
-                foreach (string subDir in Directory.GetDirectories(selectedFolder))
-                {
-                    ListViewItem item = new ListViewItem(Path.GetFileName(subDir));
-                    item.SubItems.Add("<DIR>");
-                    item.SubItems.Add("");
-                    listView1.Items.Add(item);
-                }
+            treeView1.SelectedNode = e.Node;
+            string selectedPath = GetFullPath(e.Node);
 
-                // 显示文件夹中的txt文件
-                foreach (string file in Directory.GetFiles(selectedFolder))
+            // 清空列表视图
+            listView1.Items.Clear();
+
+            DirectoryInfo directoryInfo = new DirectoryInfo(selectedPath);
+
+            foreach (var dir in directoryInfo.GetDirectories())
+            {
+                ListViewItem item = new ListViewItem(dir.Name);
+                item.SubItems.Add("文件夹");
+                listView1.Items.Add(item);
+            }
+
+            foreach (var file in directoryInfo.GetFiles())
+            {
+                ListViewItem item = new ListViewItem(file.Name);
+                item.SubItems.Add("文件");
+                listView1.Items.Add(item);
+            }
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listView1.SelectedItems.Count > 0)
+            {
+                string selectedPath = GetFullPath(treeView1.SelectedNode) + "\\" + listView1.SelectedItems[0].Text;
+                if (Path.GetExtension(selectedPath).ToLower() == ".txt")
                 {
-                    string ext = Path.GetExtension(file);
-                    if (ext == ".txt")
+                    try
                     {
-                        ListViewItem item = new ListViewItem(Path.GetFileName(file));
-                        item.SubItems.Add("");
-                        item.SubItems.Add(Path.GetFullPath(file));
-                        listView1.Items.Add(item);
+                        using (StreamReader sr = new StreamReader(selectedPath))
+                        {
+                            MessageBox.Show(sr.ReadToEnd(), "File Content");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error reading the file: " + ex.Message, "Error");
                     }
                 }
             }
-            catch (Exception ex)
-            {
-                // 如果加载文件或文件夹失败，则在控制台中输出错误信息
-                Console.WriteLine("Error loading folder: " + ex.Message);
-            }
         }
 
-        private void listView1_MouseDoubleClick(object sender, MouseEventArgs e)
+        private void listView1_DoubleClick(object sender, EventArgs e)
         {
-            // 当用户在右侧列表中双击一个txt文件时，打开该文件
             if (listView1.SelectedItems.Count > 0)
             {
-                string filePath = listView1.SelectedItems[0].SubItems[2].Text;
-                if (File.Exists(filePath))
+                string selectedItem = listView1.SelectedItems[0].Text;
+                string selectedPath = GetFullPath(treeView1.SelectedNode) + "\\" + selectedItem;
+
+                if (Directory.Exists(selectedPath))
                 {
-                    System.Diagnostics.Process.Start(filePath);
+                    // 清空列表视图
+                    listView1.Items.Clear();
+
+                    // 更新树形视图
+                    TreeNode selectedNode = treeView1.SelectedNode;
+                    selectedNode.Nodes.Clear();
+                    PopulateTreeView(selectedPath, selectedNode);
+
+                    // 显示文件夹内容
+                    DirectoryInfo directoryInfo = new DirectoryInfo(selectedPath);
+                    foreach (var dir in directoryInfo.GetDirectories())
+                    {
+                        ListViewItem item = new ListViewItem(dir.Name);
+                        item.SubItems.Add("文件夹");
+                        listView1.Items.Add(item);
+                    }
+                    foreach (var file in directoryInfo.GetFiles())
+                    {
+                        ListViewItem item = new ListViewItem(file.Name);
+                        item.SubItems.Add("文件");
+                        listView1.Items.Add(item);
+                    }
+                    // 刷新树形视图
+                    UpdateTreeView();
                 }
             }
         }
+
+
+        private string GetFullPath(TreeNode node)
+        {
+            if (node == null)
+                return rootDirectory;
+
+            string path = node.Text;
+            TreeNode currentNode = node;
+
+            while (currentNode.Parent != null)
+            {
+                currentNode = currentNode.Parent;
+                path = currentNode.Text + "\\" + path;
+            }
+
+            return path;
+        }
+
+        private void UpdateTreeView()
+        {
+            treeView1.BeginUpdate();
+            treeView1.Nodes.Clear();
+            PopulateTreeView(rootDirectory, null);
+
+            if (currentDirectoryNode != null)
+            {
+                treeView1.SelectedNode = currentDirectoryNode;
+                currentDirectoryNode.Expand();
+            }
+
+            treeView1.EndUpdate();
+        }
+
     }
 }
