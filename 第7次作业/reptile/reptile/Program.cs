@@ -16,9 +16,10 @@ namespace UniversityPhoneNumberCrawler
         {
             Console.InputEncoding = Encoding.GetEncoding("gb2312");
             Console.Write("请输入关键字：");
-            string keyword = Console.ReadLine();
+            // string keyword = Console.ReadLine();
+            string keyword = "武汉大学电话"; // 以武汉大学为例
             Console.WriteLine($"搜索关键字：{keyword}");
-            var searchResults = await Search(keyword);
+            var searchResults = await Search(keyword, 5); // 获取前x页的搜索结果
             Console.WriteLine($"搜索结果：共 {searchResults.Count} 个");
             foreach (var result in searchResults)
             {
@@ -28,7 +29,7 @@ namespace UniversityPhoneNumberCrawler
             var tasks = new List<Task>();
             foreach (var url in searchResults)
             {
-                tasks.Add(Task.Run(() => CrawlUrl(url)));
+                tasks.Add(CrawlUrl(url));
             }
             await Task.WhenAll(tasks);
             Console.WriteLine($"共爬取到 {phoneNumberResults.Count} 个电话号码：");
@@ -37,7 +38,7 @@ namespace UniversityPhoneNumberCrawler
                 Console.WriteLine($"  {result}");
             }
         }
-        static async Task<List<string>> Search(string keyword)
+        static async Task<List<string>> Search(string keyword, int pageCount)
         {
             var searchUrls = new List<string>
             {
@@ -47,40 +48,44 @@ namespace UniversityPhoneNumberCrawler
             var results = new List<string>();
             foreach (var url in searchUrls)
             {
-                Console.WriteLine($"正在访问 {url}...");
-                try
+                for (int page = 1; page <= pageCount; page++)
                 {
-                    var html = await httpClient.GetStringAsync(url);
-                    // 仅用于测试
-                    // Console.WriteLine(html);
-                    Console.WriteLine($"访问 {url} 成功，共 {html.Length} 字节");
-                    var regex = new Regex(@"<a href=""(?<url>https?://[\w\d./?=#&]+)""");
-                    var matches = regex.Matches(html);
-                    foreach (Match match in matches)
+                    var searchUrl = $"{url}&page={page}"; // 修改搜索链接以指定页码
+                    Console.WriteLine($"正在访问 {searchUrl}...");
+                    try
                     {
-                        var result = match.Groups["url"].Value;
-                        results.Add(result);
+                        var html = await httpClient.GetStringAsync(searchUrl);
+                        Console.WriteLine($"访问 {searchUrl} 成功，共 {html.Length} 字节");
+                        var regex = new Regex(@"<a href=""(?<url>https?://[\w\d./?=#&]+)""");
+                        var matches = regex.Matches(html);
+                        foreach (Match match in matches)
+                        {
+                            var result = match.Groups["url"].Value;
+                            results.Add(result);
+                        }
+                        Console.WriteLine($"从 {searchUrl} 中找到 {matches.Count} 个 URL");
                     }
-                    Console.WriteLine($"从 {url} 中找到 {matches.Count} 个 URL");
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"访问 {url} 失败：{ex.Message}");
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"访问 {searchUrl} 失败：{ex.Message}");
+                    }
                 }
             }
             return results;
         }
-        static void CrawlUrl(string url)
+
+        static async Task CrawlUrl(string url)
         {
             try
             {
-                int phoneNumberCount = 0;
                 Console.WriteLine($"正在访问 {url}...");
-                var html = httpClient.GetStringAsync(url).Result;
+                var html = await httpClient.GetStringAsync(url);
                 Console.WriteLine($"访问 {url} 成功，共 {html.Length} 字节");
-                var regex = new Regex(@"\b(?:\d{2,3}-)?\d{8}\b");
+                var regex = new Regex(@"\b\d{3,4}-?\d{8}\b");
                 var matches = regex.Matches(html);
                 Console.WriteLine($"从 {url} 中找到 {matches.Count} 个电话号码");
+
+                int phoneNumberCount = 0;
                 foreach (Match match in matches)
                 {
                     if (phoneNumberCount >= 100) break;

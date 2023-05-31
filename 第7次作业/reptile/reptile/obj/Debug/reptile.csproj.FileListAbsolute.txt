@@ -6,3 +6,11 @@ C:\Users\XMengH\source\repos\reptile\reptile\obj\Debug\reptile.csproj.SuggestedB
 C:\Users\XMengH\source\repos\reptile\reptile\obj\Debug\reptile.csproj.CoreCompileInputs.cache
 C:\Users\XMengH\source\repos\reptile\reptile\obj\Debug\reptile.exe
 C:\Users\XMengH\source\repos\reptile\reptile\obj\Debug\reptile.pdb
+E:\gitkarten\csharp-work\第7次作业\reptile\reptile\bin\Debug\reptile.exe.config
+E:\gitkarten\csharp-work\第7次作业\reptile\reptile\bin\Debug\reptile.exe
+E:\gitkarten\csharp-work\第7次作业\reptile\reptile\bin\Debug\reptile.pdb
+E:\gitkarten\csharp-work\第7次作业\reptile\reptile\obj\Debug\reptile.csproj.AssemblyReference.cache
+E:\gitkarten\csharp-work\第7次作业\reptile\reptile\obj\Debug\reptile.csproj.SuggestedBindingRedirects.cache
+E:\gitkarten\csharp-work\第7次作业\reptile\reptile\obj\Debug\reptile.csproj.CoreCompileInputs.cache
+E:\gitkarten\csharp-work\第7次作业\reptile\reptile\obj\Debug\reptile.exe
+E:\gitkarten\csharp-work\第7次作业\reptile\reptile\obj\Debug\reptile.pdb
