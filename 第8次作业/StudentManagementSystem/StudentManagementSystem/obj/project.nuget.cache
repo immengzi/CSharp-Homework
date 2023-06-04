@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "52xUDYTqN4TEFbsV6tFwxiqky5As8zMED6N9JKFV045lipG/1hVaOknSDKQk/x29/cONdCYLQNw4wmxT0+V1Sw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\XMengH\\source\\repos\\StudentManagementSystem\\StudentManagementSystem\\StudentManagementSystem.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\XMengH\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.117\\stub.system.data.sqlite.core.netstandard.1.0.117.nupkg.sha512",
+    "C:\\Users\\XMengH\\.nuget\\packages\\system.data.sqlite.core\\1.0.117\\system.data.sqlite.core.1.0.117.nupkg.sha512"
+  ],
+  "logs": []
+}
